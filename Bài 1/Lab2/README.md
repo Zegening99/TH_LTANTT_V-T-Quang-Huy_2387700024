@@ -102,6 +102,3 @@ Hệ thống **GitSecure** được triển khai dưới dạng một Git pre-co
 
 ---
 
-## 6. Tóm tắt
-
-GitSecure là một ví dụ tốt về **shift-left security** ở mức cơ bản: kết hợp secret-pattern scanning, kiểm tra quyền file và SAST (Bandit) ngay tại thời điểm commit. Tuy nhiên, vì đây thuần túy là **client-side control**, hệ thống dễ bị vô hiệu hóa (`--no-verify`, quên cấu hình hooksPath) và có một số điểm yếu kỹ thuật (regex tĩnh, fail-open trên Windows, parser Bandit mong manh, log không tamper-evident). Để đạt mức độ bảo mật đầy đủ theo mô hình *defense in depth*, cần bổ sung lớp kiểm soát bắt buộc phía server/CI và nâng cấp các thành phần phát hiện đã liệt kê ở Mục 5.
