@@ -1,7 +1,7 @@
-##Họ và Tên: Võ Tự Quang Huy  
-##MSSV: 23DATA1
-##Lớp: 2387700024
-##LAB 3: SECURELOGGER 
+## Họ và Tên: Võ Tự Quang Huy  
+## MSSV: 23DATA1
+## Lớp: 2387700024
+## LAB 3: SECURELOGGER 
 # BÁO CÁO PHÂN TÍCH BẢO MẬT HỆ THỐNG "SECURELOGGER"
 
 ## 1. Mục tiêu và phạm vi
