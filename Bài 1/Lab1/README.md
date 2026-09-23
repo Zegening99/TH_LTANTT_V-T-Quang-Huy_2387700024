@@ -1,7 +1,7 @@
 ### Họ và Tên: Võ Tự Quang Huy
 ### MSSV: 23DATA1
 ### Lớp: 2387700024
-### LAB1 : SECURE VALIDATOR LAB 
+## LAB1 : SECURE VALIDATOR LAB 
 ## Phần 1: Cơ chế hoạt động của thư viện `core.py`
 
 Thư viện gồm 5 hàm, chia làm 2 nhóm:
