@@ -1,0 +1,583 @@
+
+INFO:root:[2026-10-07 08:22:32] Port 22 is open on 10.12.23.82
+INFO:root:[2026-10-07 08:22:33] Running service detection on 10.12.23.82:22,80,443
+INFO:root:[2026-10-07 08:22:35] Starting Nmap 7.991 ( https://nmap.org ) at 2026-10-07 08:22 +0700
+Nmap scan report for 10.12.23.82
+Host is up (0.00s latency).
+
+PORT    STATE  SERVICE VERSION
+22/tcp  open   ssh     OpenSSH for_Windows_9.5 (protocol 2.0)
+80/tcp  closed http
+443/tcp closed https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.95 seconds
+
+INFO:root:[2026-10-07 08:22:35] [10.12.23.82:22] Banner: SSH-2.0-OpenSSH_for_Windows_9.5
+INFO:root:[2026-10-07 08:22:39] Mapping network...
+INFO:root:[2026-10-07 08:22:39] 
+Interface: 172.16.0.1 --- 0xd
+  Internet Address      Physical Address      Type
+  172.16.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.12.23.82 --- 0x12
+  Internet Address      Physical Address      Type
+  10.12.0.254           00-aa-6e-37-de-67     dynamic   
+  10.12.25.180          f4-c8-8a-2b-05-07     dynamic   
+  10.12.26.227          f8-54-f6-95-6f-b2     dynamic   
+  10.12.49.204          f4-7b-09-f5-49-48     dynamic   
+  10.12.78.207          88-d8-2e-5f-c6-70     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.1.1 --- 0x14
+  Internet Address      Physical Address      Type
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.0.0.1 --- 0x15
+  Internet Address      Physical Address      Type
+  10.0.0.255            ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+INFO:root:[2026-10-07 08:24:19] Port 80 is open on scanme.nmap.org
+INFO:root:[2026-10-07 08:24:19] Port 22 is open on scanme.nmap.org
+INFO:root:[2026-10-07 08:27:59] Port 22 is open on 10.12.23.82
+INFO:root:[2026-10-07 08:28:00] Running service detection on 10.12.23.82:21,22,80,443
+INFO:root:[2026-10-07 08:28:01] Starting Nmap 7.991 ( https://nmap.org ) at 2026-10-07 08:28 +0700
+Nmap scan report for 10.12.23.82
+Host is up (0.00s latency).
+
+PORT    STATE  SERVICE VERSION
+21/tcp  closed ftp
+22/tcp  open   ssh     OpenSSH for_Windows_9.5 (protocol 2.0)
+80/tcp  closed http
+443/tcp closed https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.45 seconds
+
+INFO:root:[2026-10-07 08:28:03] [10.12.23.82:22] Banner: SSH-2.0-OpenSSH_for_Windows_9.5
+INFO:root:[2026-10-07 08:28:07] Mapping network...
+INFO:root:[2026-10-07 08:28:08] 
+Interface: 172.16.0.1 --- 0xd
+  Internet Address      Physical Address      Type
+  172.16.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.12.23.82 --- 0x12
+  Internet Address      Physical Address      Type
+  10.12.0.254           00-aa-6e-37-de-67     dynamic   
+  10.12.25.180          f4-c8-8a-2b-05-07     dynamic   
+  10.12.26.227          f8-54-f6-95-6f-b2     dynamic   
+  10.12.49.204          f4-7b-09-f5-49-48     dynamic   
+  10.12.78.207          88-d8-2e-5f-c6-70     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.1.1 --- 0x14
+  Internet Address      Physical Address      Type
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.0.0.1 --- 0x15
+  Internet Address      Physical Address      Type
+  10.0.0.255            ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+INFO:root:[2026-10-07 08:29:56] Port 22 is open on 192.168.1.1
+INFO:root:[2026-10-07 08:29:57] Running service detection on 192.168.1.1:21,22,80,443
+INFO:root:[2026-10-07 08:29:58] Starting Nmap 7.991 ( https://nmap.org ) at 2026-10-07 08:29 +0700
+Nmap scan report for 192.168.1.1
+Host is up (0.00067s latency).
+
+PORT    STATE  SERVICE VERSION
+21/tcp  closed ftp
+22/tcp  open   ssh     OpenSSH for_Windows_9.5 (protocol 2.0)
+80/tcp  closed http
+443/tcp closed https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.24 seconds
+
+INFO:root:[2026-10-07 08:30:00] [192.168.1.1:22] Banner: SSH-2.0-OpenSSH_for_Windows_9.5
+INFO:root:[2026-10-07 08:30:04] Mapping network...
+INFO:root:[2026-10-07 08:30:04] 
+Interface: 172.16.0.1 --- 0xd
+  Internet Address      Physical Address      Type
+  172.16.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.12.23.82 --- 0x12
+  Internet Address      Physical Address      Type
+  10.12.0.254           00-aa-6e-37-de-67     dynamic   
+  10.12.25.180          f4-c8-8a-2b-05-07     dynamic   
+  10.12.26.227          f8-54-f6-95-6f-b2     dynamic   
+  10.12.49.204          f4-7b-09-f5-49-48     dynamic   
+  10.12.78.207          88-d8-2e-5f-c6-70     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.1.1 --- 0x14
+  Internet Address      Physical Address      Type
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.0.0.1 --- 0x15
+  Internet Address      Physical Address      Type
+  10.0.0.255            ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.12.23.82:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-053-142
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 08:38:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 08:38:59] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 08:38:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:[2026-10-07 08:42:48] Running service detection on  10.12.23.82:22,80,443
+INFO:root:[2026-10-07 08:42:49] Starting Nmap 7.991 ( https://nmap.org ) at 2026-10-07 08:42 +0700
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.64 seconds
+
+INFO:root:[2026-10-07 08:42:49] Mapping network...
+INFO:root:[2026-10-07 08:42:49] 
+Interface: 172.16.0.1 --- 0xd
+  Internet Address      Physical Address      Type
+  172.16.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.12.23.82 --- 0x12
+  Internet Address      Physical Address      Type
+  10.12.0.254           00-aa-6e-37-de-67     dynamic   
+  10.12.25.180          f4-c8-8a-2b-05-07     dynamic   
+  10.12.26.227          f8-54-f6-95-6f-b2     dynamic   
+  10.12.49.204          f4-7b-09-f5-49-48     dynamic   
+  10.12.78.207          88-d8-2e-5f-c6-70     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.1.1 --- 0x14
+  Internet Address      Physical Address      Type
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.0.0.1 --- 0x15
+  Internet Address      Physical Address      Type
+  10.0.0.255            ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 08:42:50] "POST /scan HTTP/1.1" 200 -
+INFO:root:[2026-10-07 08:45:13] Running service detection on  10.12.23.82:22,80,443
+INFO:root:[2026-10-07 08:45:14] Starting Nmap 7.991 ( https://nmap.org ) at 2026-10-07 08:45 +0700
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.65 seconds
+
+INFO:root:[2026-10-07 08:45:14] Mapping network...
+INFO:root:[2026-10-07 08:45:14] 
+Interface: 172.16.0.1 --- 0xd
+  Internet Address      Physical Address      Type
+  172.16.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.12.23.82 --- 0x12
+  Internet Address      Physical Address      Type
+  10.12.0.254           00-aa-6e-37-de-67     dynamic   
+  10.12.25.180          f4-c8-8a-2b-05-07     dynamic   
+  10.12.26.227          f8-54-f6-95-6f-b2     dynamic   
+  10.12.49.204          f4-7b-09-f5-49-48     dynamic   
+  10.12.78.207          88-d8-2e-5f-c6-70     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.1.1 --- 0x14
+  Internet Address      Physical Address      Type
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.0.0.1 --- 0x15
+  Internet Address      Physical Address      Type
+  10.0.0.255            ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 08:45:15] "POST /scan HTTP/1.1" 200 -
+INFO:root:[2026-10-07 08:47:44] Port 22 is open on 10.12.23.82
+INFO:root:[2026-10-07 08:47:45] Running service detection on 10.12.23.82:22,80,443
+INFO:root:[2026-10-07 08:47:46] Starting Nmap 7.991 ( https://nmap.org ) at 2026-10-07 08:47 +0700
+Nmap scan report for 10.12.23.82
+Host is up (0.00s latency).
+
+PORT    STATE  SERVICE VERSION
+22/tcp  open   ssh     OpenSSH for_Windows_9.5 (protocol 2.0)
+80/tcp  closed http
+443/tcp closed https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.29 seconds
+
+INFO:root:[2026-10-07 08:47:46] [10.12.23.82:22] Banner: SSH-2.0-OpenSSH_for_Windows_9.5
+INFO:root:[2026-10-07 08:47:50] Mapping network...
+INFO:root:[2026-10-07 08:47:50] 
+Interface: 172.16.0.1 --- 0xd
+  Internet Address      Physical Address      Type
+  172.16.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.12.23.82 --- 0x12
+  Internet Address      Physical Address      Type
+  10.12.0.254           00-aa-6e-37-de-67     dynamic   
+  10.12.25.180          f4-c8-8a-2b-05-07     dynamic   
+  10.12.26.227          f8-54-f6-95-6f-b2     dynamic   
+  10.12.49.204          f4-7b-09-f5-49-48     dynamic   
+  10.12.78.207          88-d8-2e-5f-c6-70     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.1.1 --- 0x14
+  Internet Address      Physical Address      Type
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.0.0.1 --- 0x15
+  Internet Address      Physical Address      Type
+  10.0.0.255            ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 08:47:51] "POST /scan HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\Bài 1\\Bài 3\\lab 2\\netrecon\\modules\\email_sender.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-053-142
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.12.23.82:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-053-142
+INFO:root:[2026-10-07 08:56:43] Port 22 is open on 10.12.23.82
+INFO:root:[2026-10-07 08:56:44] Running service detection on 10.12.23.82:22,80,443
+INFO:root:[2026-10-07 08:56:45] Starting Nmap 7.991 ( https://nmap.org ) at 2026-10-07 08:56 +0700
+Nmap scan report for 10.12.23.82
+Host is up (0.00076s latency).
+
+PORT    STATE  SERVICE VERSION
+22/tcp  open   ssh     OpenSSH for_Windows_9.5 (protocol 2.0)
+80/tcp  closed http
+443/tcp closed https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.40 seconds
+
+INFO:root:[2026-10-07 08:56:45] [10.12.23.82:22] Banner: SSH-2.0-OpenSSH_for_Windows_9.5
+INFO:root:[2026-10-07 08:56:49] Mapping network...
+INFO:root:[2026-10-07 08:56:49] 
+Interface: 172.16.0.1 --- 0xd
+  Internet Address      Physical Address      Type
+  172.16.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.12.23.82 --- 0x12
+  Internet Address      Physical Address      Type
+  10.12.0.254           00-aa-6e-37-de-67     dynamic   
+  10.12.25.180          f4-c8-8a-2b-05-07     dynamic   
+  10.12.26.227          f8-54-f6-95-6f-b2     dynamic   
+  10.12.49.204          f4-7b-09-f5-49-48     dynamic   
+  10.12.78.207          88-d8-2e-5f-c6-70     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.1.1 --- 0x14
+  Internet Address      Physical Address      Type
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.0.0.1 --- 0x15
+  Internet Address      Physical Address      Type
+  10.0.0.255            ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 08:56:50] "POST /scan HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.12.23.82:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-053-142
+INFO:root:[2026-10-07 09:01:52] Port 22 is open on 10.12.23.82
+INFO:root:[2026-10-07 09:01:53] Running service detection on 10.12.23.82:22,80,443
+INFO:root:[2026-10-07 09:01:55] Starting Nmap 7.991 ( https://nmap.org ) at 2026-10-07 09:01 +0700
+Nmap scan report for 10.12.23.82
+Host is up (0.00076s latency).
+
+PORT    STATE  SERVICE VERSION
+22/tcp  open   ssh     OpenSSH for_Windows_9.5 (protocol 2.0)
+80/tcp  closed http
+443/tcp closed https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.58 seconds
+
+INFO:root:[2026-10-07 09:01:55] [10.12.23.82:22] Banner: SSH-2.0-OpenSSH_for_Windows_9.5
+INFO:root:[2026-10-07 09:01:59] Mapping network...
+INFO:root:[2026-10-07 09:01:59] 
+Interface: 172.16.0.1 --- 0xd
+  Internet Address      Physical Address      Type
+  172.16.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.12.23.82 --- 0x12
+  Internet Address      Physical Address      Type
+  10.12.0.254           00-aa-6e-37-de-67     dynamic   
+  10.12.25.180          f4-c8-8a-2b-05-07     dynamic   
+  10.12.26.227          f8-54-f6-95-6f-b2     dynamic   
+  10.12.49.204          f4-7b-09-f5-49-48     dynamic   
+  10.12.78.207          88-d8-2e-5f-c6-70     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.1.1 --- 0x14
+  Internet Address      Physical Address      Type
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.0.0.1 --- 0x15
+  Internet Address      Physical Address      Type
+  10.0.0.255            ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 09:02:00] "POST /scan HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\Bài 1\\Bài 3\\lab 2\\netrecon\\modules\\email_sender.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-053-142
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.12.23.82:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-053-142
+INFO:root:[2026-10-07 09:17:58] Running service detection on 10.12.23.82:22,80,443
+INFO:root:[2026-10-07 09:17:59] Starting Nmap 7.991 ( https://nmap.org ) at 2026-10-07 09:17 +0700
+Nmap scan report for 10.12.23.82
+Host is up (0.00s latency).
+
+PORT    STATE  SERVICE VERSION
+22/tcp  closed ssh
+80/tcp  closed http
+443/tcp closed https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.29 seconds
+
+INFO:root:[2026-10-07 09:18:05] Mapping network...
+INFO:root:[2026-10-07 09:18:05] 
+Interface: 172.16.0.1 --- 0xd
+  Internet Address      Physical Address      Type
+  172.16.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.12.23.82 --- 0x12
+  Internet Address      Physical Address      Type
+  10.12.0.254           00-aa-6e-37-de-67     dynamic   
+  10.12.25.180          f4-c8-8a-2b-05-07     dynamic   
+  10.12.26.227          f8-54-f6-95-6f-b2     dynamic   
+  10.12.49.204          f4-7b-09-f5-49-48     dynamic   
+  10.12.78.207          88-d8-2e-5f-c6-70     dynamic   
+  10.12.82.88           12-94-a3-71-e2-6b     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.1.1 --- 0x14
+  Internet Address      Physical Address      Type
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.0.0.1 --- 0x15
+  Internet Address      Physical Address      Type
+  10.0.0.255            ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 09:18:07] "POST /scan HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'D:\\Bài 1\\Bài 3\\lab 2\\netrecon\\modules\\test_mail.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-053-142
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.12.23.82:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 137-053-142
+INFO:root:[2026-10-07 09:24:34] Running service detection on 10.12.23.82:22,80,443
+INFO:root:[2026-10-07 09:24:35] Starting Nmap 7.991 ( https://nmap.org ) at 2026-10-07 09:24 +0700
+Nmap scan report for 10.12.23.82
+Host is up (0.00076s latency).
+
+PORT    STATE  SERVICE VERSION
+22/tcp  closed ssh
+80/tcp  closed http
+443/tcp closed https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.17 seconds
+
+INFO:root:[2026-10-07 09:24:41] Mapping network...
+INFO:root:[2026-10-07 09:24:41] 
+Interface: 172.16.0.1 --- 0xd
+  Internet Address      Physical Address      Type
+  172.16.255.255        ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.12.23.82 --- 0x12
+  Internet Address      Physical Address      Type
+  10.12.0.254           00-aa-6e-37-de-67     dynamic   
+  10.12.25.180          f4-c8-8a-2b-05-07     dynamic   
+  10.12.26.227          f8-54-f6-95-6f-b2     dynamic   
+  10.12.49.204          f4-7b-09-f5-49-48     dynamic   
+  10.12.78.207          88-d8-2e-5f-c6-70     dynamic   
+  10.12.82.88           12-94-a3-71-e2-6b     dynamic   
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static    
+
+Interface: 192.168.1.1 --- 0x14
+  Internet Address      Physical Address      Type
+  192.168.1.255         ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+Interface: 10.0.0.1 --- 0x15
+  Internet Address      Physical Address      Type
+  10.0.0.255            ff-ff-ff-ff-ff-ff     static    
+  224.0.0.22            01-00-5e-00-00-16     static    
+  224.0.0.251           01-00-5e-00-00-fb     static    
+  224.0.0.252           01-00-5e-00-00-fc     static    
+  239.255.255.250       01-00-5e-7f-ff-fa     static    
+
+INFO:werkzeug:127.0.0.1 - - [07/Oct/2026 09:24:46] "POST /scan HTTP/1.1" 200 -
