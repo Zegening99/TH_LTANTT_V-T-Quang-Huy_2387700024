@@ -1,0 +1,20 @@
+$ python -m unittest discover -s tests -v
+test_eval_detection (test_ast_analyzer.TestASTAnalyzer.test_eval_detection) ... ok
+test_flake8_detection (test_code_quality_checker.TestCodeQualityChecker.test_flake8_detection) ... ok
+test_generate_report (test_sarif_reporter.TestSarifReporter.test_generate_report) ... C:\Users\LOQ\Documents\Codex\2026-10-20\c\outputs\BUOI5\LAB01\sast_tool\sarif_reporter.py:29: DeprecationWarning: keys will default to True in jsonpickle 5.0.0
+  f.write(jsonpickle.encode(log, unpicklable=False, indent=2))
+ok
+test_evaluate (test_security_rule_engine.TestSecurityRuleEngine.test_evaluate) ... ok
+test_hardcoded_password (test_vuln_pattern_matcher.TestVulnPatternMatcher.test_hardcoded_password) ... ok
+test_pickle_import (test_vuln_pattern_matcher.TestVulnPatternMatcher.test_pickle_import) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.603s
+
+OK
+$ python -m sast_tool.main examples/vulnerable_01.py
+Analysis complete.
+    Report saved to report.sarif with 8 issues.
+$ python -m sast_tool.main examples/vulnerable_02.py
+Analysis complete.
+    Report saved to report.sarif with 4 issues.

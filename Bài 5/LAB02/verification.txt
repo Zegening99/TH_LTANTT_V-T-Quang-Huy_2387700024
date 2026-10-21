@@ -1,0 +1,43 @@
+$ python -m unittest discover -s tests -v
+test_check_overflow (test_memory_analyzer.TestMemoryAnalyzer.test_check_overflow) ... ok
+test_get_network_stats (test_network_traffic_analyzer.TestNetworkTrafficAnalyzer.test_get_network_stats) ... ok
+test_cpu_and_memory (test_runtime_monitor.TestRuntimeMonitor.test_cpu_and_memory) ... ok
+test_suspicious_calls (test_security_behavior_checker.TestSecurityBehaviorChecker.test_suspicious_calls) ... ok
+test_run_isolated (test_virtual_sandbox.TestVirtualSandbox.test_run_isolated) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.085s
+
+OK
+$ python main.py
+[+] Monitoring current process: 2328
+CPU Usage: 0.0
+Memory Usage: 18194432
+Open Files: [popenfile(path='C:\\Windows\\System32\\en-US\\kernel32.dll.mui', fd=-1), popenfile(path='C:\\Windows\\System32\\en-US\\KernelBase.dll.mui', fd=-1)]
+Memory Leaks: []
+Overflow Test: True
+Network Stats: {'Local Area Connection* 8': snetio(bytes_sent=0, bytes_recv=0, packets_sent=0, packets_recv=0, errin=0, errout=0, dropin=0, dropout=0), 'Local Area Connection* 10': snetio(bytes_sent=0, bytes_recv=0, packets_sent=0, packets_recv=0, errin=0, errout=0, dropin=0, dropout=0), 'VMware Network Adapter VMnet1': snetio(bytes_sent=1036, bytes_recv=250, packets_sent=1036, packets_recv=250, errin=0, errout=0, dropin=0, dropout=0), 'VMware Network Adapter VMnet8': snetio(bytes_sent=752, bytes_recv=0, packets_sent=752, packets_recv=0, errin=0, errout=0, dropin=0, dropout=0), 'VMware Network Adapter VMnet2': snetio(bytes_sent=740, bytes_recv=0, packets_sent=740, packets_recv=0, errin=0, errout=0, dropin=0, dropout=0), 'VMware Network Adapter VMnet3': snetio(bytes_sent=741, bytes_recv=0, packets_sent=741, packets_recv=0, errin=0, errout=0, dropin=0, dropout=0), 'Wi-Fi': snetio(bytes_sent=1318740728, bytes_recv=1873064646, packets_sent=422885, packets_recv=4411880, errin=0, errout=0, dropin=0, dropout=0), 'Bluetooth Network Connection': snetio(bytes_sent=0, bytes_recv=0, packets_sent=0, packets_recv=0, errin=0, errout=0, dropin=0, dropout=0), 'Ethernet': snetio(bytes_sent=0, bytes_recv=0, packets_sent=0, packets_recv=0, errin=0, errout=0, dropin=0, dropout=0), 'Loopback Pseudo-Interface 1': snetio(bytes_sent=0, bytes_recv=0, packets_sent=0, packets_recv=0, errin=0, errout=0, dropin=0, dropout=0)}
+Suspicious Calls: ['os.system', 'eval', 'exec']
+Sandbox stdout: Hello Sandbox
+
+
+Sandbox stderr: 
+HTTP 200 /api/monitor: {"cpu_usage": 0.0, "memory_usage": 37945344, "open_files": ["C:\\Windows\\System32\\en-US\\KernelBase.dll.mui", "C:\\Windows\\System32\\en-US\\kernel32.dll.mui", "C:\\Users\\LOQ\\Documents\\Codex\\2026-10-20\\c\\work\\flask-server.log"]}
+HTTP 200 /api/memory: {"memory_leaks": "[]", "overflow_test": true}
+HTTP 200 /api/network: {"network_stats": {"Bluetooth Network Connection": {"bytes_recv": 0, "bytes_sent": 0, "dropin": 0, "dropout": 0, "errin": 0, "errout": 0, "packets_recv": 0, "packets_sent": 0}, "Ethernet": {"bytes_recv": 0, "bytes_sent": 0, "dropin": 0, "dropout": 0, "errin": 0, "errout": 0, "packets_recv": 0, "packets_sent": 0}, "Local Area Connection* 10": {"bytes_recv": 0, "bytes_sent": 0, "dropin": 0, "dropout": 0, "errin": 0, "errout": 0, "packets_recv": 0, "packets_sent": 0}, "Local Area Connection* 8": {"bytes_recv": 0, "bytes_sent": 0, "dropin": 0, "dropout": 0, "errin": 0, "errout": 0, "packets_recv": 0, "packets_sent": 0}, "Loopback Pseudo-Interface 1": {"bytes_recv": 0, "bytes_sent": 0, "dropin": 0, "dropout": 0, "errin": 0, "errout": 0, "packets_recv": 0, "packets_sent": 0}, "VMware Network Adapter VMnet1": {"bytes_recv": 250, "bytes_sent": 1036, "dropin": 0, "dropout": 0, "errin": 0, "errout": 0, "packets_recv": 250, "packets_sent": 1036}, "VMware Network Adapter VMnet2": {"bytes_recv": 0, "bytes_sent": 740, "dropin": 0, "dropout": 0, "errin": 0, "errout": 0, "packets_recv": 0, "packets_sent": 740}, "VMware Network Adapter VMnet3": {"bytes_recv": 0, "bytes_sent": 741, "dropin": 0, "dropout": 0, "errin": 0, "errout": 0, "packets_recv": 0, "packets_sent": 741}, "VMware Network Adapter VMnet8": {"bytes_recv": 0, "bytes_sent": 752, "dropin": 0, "dropout": 0, "errin": 0, "errout": 0, "packets_recv": 0, "packets_sent": 752}, "Wi-Fi": {"bytes_recv": 1873144417, "bytes_sent": 1318741469, "dropin": 0, "dropout": 0, "errin": 0, "errout": 0, "packets_recv": 4412236, "packets_sent": 422892}}}
+HTTP 200 /api/security: {"suspicious_calls": ["os.system", "eval", "exec"]}
+HTTP 200 /api/sandbox: {"stderr": "", "stdout": "Hello Sandbox\r\n"}
+
+Server command: python app.py (original PDF entry point, port 5000).
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.12.98.9:5000
+Press CTRL+C to quit
+127.0.0.1 - - [20/Oct/2026 10:58:20] "GET /api/monitor HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 10:58:20] "GET /api/memory HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 10:58:20] "GET /api/network HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 10:58:20] "GET /api/security HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 10:58:20] "POST /api/sandbox HTTP/1.1" 200 -
