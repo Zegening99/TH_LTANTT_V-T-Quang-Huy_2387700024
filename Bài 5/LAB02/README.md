@@ -304,9 +304,4 @@ Nhật ký của Flask ghi nhận đủ năm yêu cầu, tất cả trả về m
 
 Bài thực hành đã xây dựng thành công nền tảng phân tích động gồm `RuntimeMonitor`, `MemoryAnalyzer`, `NetworkTrafficAnalyzer`, `SecurityBehaviorChecker` và `VirtualSandbox`, được kiểm chứng bằng 5 unit test đạt toàn bộ và bằng các lời gọi API trả về mã 200. Kết quả cho thấy kiểm thử động cung cấp thông tin mà phân tích tĩnh không có được, như mức tài nguyên, tệp đang mở, lưu lượng mạng và kết quả thực thi thực tế. Đồng thời, quá trình phân tích mã cũng chỉ ra rằng các thành phần như sandbox và bộ kiểm tra hành vi mới ở mức minh họa; để ứng dụng thực tế cần cô lập mạnh hơn, kiểm soát đầu vào chặt chẽ và cơ chế phát hiện dựa trên hành vi thật của tiến trình.
 
-## 11. Tài liệu tham khảo
 
-1. Tài liệu hướng dẫn thực hành Bài 5: *Phân tích và kiểm thử bảo mật* (SAST và DAST).
-2. Tài liệu `psutil`: https://psutil.readthedocs.io
-3. Tài liệu Flask: https://flask.palletsprojects.com
-4. Tài liệu Python `subprocess`, `tempfile`, `gc`, `unittest`: https://docs.python.org/3/
