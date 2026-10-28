@@ -7,7 +7,6 @@
 | **Họ và tên** | Võ Tự Quang Huy |
 | **MSSV** | 2387700024 |
 | **Lớp** | 23DATA1 |
-| **Môn học** | Bảo mật mạng máy tính |
 | **Bài thực hành** | Bài 6 – Bảo mật với DevSecOps (mục 6.2) |
 | **Ngày thực hiện** | 27–28/10/2026 |
 | **Mã nguồn** | https://github.com/Zegening99/test-project và https://github.com/Zegening99/my-pipeline-tutorial-project |
